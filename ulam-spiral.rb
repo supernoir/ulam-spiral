@@ -5,12 +5,13 @@ require 'prime'
 require 'paint'
 
 i = 1
+n = "\u25AA".encode('utf-8')
 
-for i in 1..600 do
+for i in 1..104729 do
  if Prime.prime?(i) == true
-    print Paint["[#{i}]", :red]
+    print Paint[n,"#f00"]
     else
-    print "[#{i}]"
+    print Paint[n,"#fff"]
  end
 end
 
